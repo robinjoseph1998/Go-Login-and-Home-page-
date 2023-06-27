@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <!-- Add the Bootstrap CSS CDN link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha384-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" crossorigin="anonymous">
+    <style>
+        body, html {
+            height: 100%; /* Set body and html height to 100% */
+        }
+        
+        body {
+            margin-bottom: 100%; /* Remove default margin */
+            background-image: url('https://e0.pxfuel.com/wallpapers/977/1020/desktop-wallpaper-past-events-golang-i-o-paris-france.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h3 {
+            font-family: "Comic Sans MS", cursive; /* Use a cartoon-style font, e.g., Comic Sans MS */
+            color: pink; /* Set the text color to pink */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+            font-size: 48px; /* Set the font size to 48 pixels */
+            /* text-align: center; */
+            /* Add more styles here as needed */
+        }
+
+        
+
+        /* Style for the cartoon-style signup button */
+        .signup-button {
+            display: inline-block;
+            padding: 10px 10px;
+            font-size: 24px;
+            font-family: "Comic Sans MS", cursive;
+            color: white;
+            background-color: rgb(32, 156, 228);
+            border-radius: 50px;
+            border: black;
+            cursor: pointer;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        /* Style for hover effect on the signup button */
+        .signup-button:hover {
+            transform: scale(1.1);
+        }
+
+       /* Media query for smaller screens */
+       @media (max-width: 768px) {
+            body {
+                background-size: 100% 100vh; /* Change background size for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Add additional styles for even smaller screens if needed */
+        }
+    </style>
+</head>
+<body>
+
+    <h3>WELCOME</h3>
+     
+
+    <h1>{{. | upper}}</h1>
+      <!-- Convert Logout link to a button -->
+      <form method="post" action="/logout"> <!-- Use a form to submit the logout request -->
+        <button class="signup-button" type="submit">
+            <i class="fas fa-gopher"></i> Sign Out
+        </button>
+
+    <!-- Add the Bootstrap JavaScript CDN link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha384-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</body>
+</html>
